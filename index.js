@@ -1,6 +1,6 @@
 /**
  * @file Determine whether the passed value is an integer.
- * @version 1.1.0
+ * @version 1.2.0
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -10,7 +10,7 @@
 'use strict';
 
 var numberIsFinite = require('is-finite-x');
-var toInteger = require('to-integer-x');
+var toInteger = require('to-integer-x').toInteger2018;
 
 /**
  * This method determines whether the passed value is an integer.
