@@ -21,40 +21,39 @@
 <a name="module_is-integer-x"></a>
 
 ## is-integer-x
+
 Determine whether the passed value is an integer.
 
-**Version**: 1.2.0  
-**Author**: Xotic750 <Xotic750@gmail.com>  
-**License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
-**Copyright**: Xotic750  
 <a name="exp_module_is-integer-x--module.exports"></a>
 
 ### `module.exports(value)` ⇒ <code>boolean</code> ⏏
+
 This method determines whether the passed value is an integer.
 
 **Kind**: Exported function  
-**Returns**: <code>boolean</code> - A Boolean indicating whether or not the given value is an integer.  
+**Returns**: <code>boolean</code> - A Boolean indicating whether or not the given value is an integer.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type            | Description                                  |
+| ----- | --------------- | -------------------------------------------- |
 | value | <code>\*</code> | The value to be tested for being an integer. |
 
-**Example**  
+**Example**
+
 ```js
-var isInteger = require('is-integer-x');
+import isInteger from 'is-integer-x';
 
-isInteger(0);         // true
-isInteger(1);         // true
-isInteger(-100000);   // true
+console.log(isInteger(0)); // true
+console.log(isInteger(1)); // true
+console.log(isInteger(-100000)); // true
 
-isInteger(0.1);       // false
-isInteger(Math.PI);   // false
+console.log(isInteger(0.1)); // false
+console.log(isInteger(Math.PI)); // false
 
-isInteger(NaN);       // false
-isInteger(Infinity);  // false
-isInteger(-Infinity); // false
-isInteger('10');      // false
-isInteger(true);      // false
-isInteger(false);     // false
-isInteger([1]);       // false
+console.log(isInteger(NaN)); // false
+console.log(isInteger(Infinity)); // false
+console.log(isInteger(-Infinity)); // false
+console.log(isInteger('10')); // false
+console.log(isInteger(true)); // false
+console.log(isInteger(false)); // false
+console.log(isInteger([1])); // false
 ```

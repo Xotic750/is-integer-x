@@ -1,50 +1,30 @@
-let isInteger;
-
-if (typeof module === 'object' && module.exports) {
-  require('es5-shim');
-  require('es5-shim/es5-sham');
-
-  if (typeof JSON === 'undefined') {
-    JSON = {};
-  }
-
-  require('json3').runInContext(null, JSON);
-  require('es6-shim');
-  const es7 = require('es7-shim');
-  Object.keys(es7).forEach(function(key) {
-    const obj = es7[key];
-
-    if (typeof obj.shim === 'function') {
-      obj.shim();
-    }
-  });
-  isInteger = require('../../index.js');
-} else {
-  isInteger = returnExports;
-}
+import isInteger from '../src/is-integer-x';
 
 describe('isInteger', function() {
   it('is a function', function() {
+    expect.assertions(1);
     expect(typeof isInteger).toBe('function');
   });
 
   it('should return true', function() {
-    isInteger(0);
-    isInteger(-0);
-    isInteger(1);
-    isInteger(-100000);
+    expect.assertions(4);
+    expect(isInteger(0)).toBe(true);
+    expect(isInteger(-0)).toBe(true);
+    expect(isInteger(1)).toBe(true);
+    expect(isInteger(-100000)).toBe(true);
   });
 
   it('should return false', function() {
-    isInteger(0.1);
-    isInteger(-0.1);
-    isInteger(Math.PI);
-    isInteger(NaN);
-    isInteger(Infinity);
-    isInteger(-Infinity);
-    isInteger('10');
-    isInteger(true);
-    isInteger(false);
-    isInteger([1]);
+    expect.assertions(10);
+    expect(isInteger(0.1)).toBe(false);
+    expect(isInteger(-0.1)).toBe(false);
+    expect(isInteger(Math.PI)).toBe(false);
+    expect(isInteger(NaN)).toBe(false);
+    expect(isInteger(Infinity)).toBe(false);
+    expect(isInteger(-Infinity)).toBe(false);
+    expect(isInteger('10')).toBe(false);
+    expect(isInteger(true)).toBe(false);
+    expect(isInteger(false)).toBe(false);
+    expect(isInteger([1])).toBe(false);
   });
 });
