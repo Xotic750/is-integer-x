@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "is-finite-x": "^4.0.4",
-    "to-integer-x": "^3.0.0"
+    "to-integer-x": "^4.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
