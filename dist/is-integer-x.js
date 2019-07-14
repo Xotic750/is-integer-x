@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-07-14T21:13:04.345Z",
+  "date": "2019-07-14T21:50:27.878Z",
   "describe": "",
   "description": "Determine whether the passed value is an integer.",
   "file": "is-integer-x.js",
-  "hash": "b27cf5811b0feb6cee1f",
+  "hash": "97f90bba988a485ead52",
   "license": "MIT",
-  "version": "2.0.1"
+  "version": "2.0.2"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -389,7 +389,6 @@ function attempt(fn) {
     };
   }
 }
-;
 
 
 // CONCATENATED MODULE: ./node_modules/has-symbol-support-x/dist/has-symbol-support-x.esm.js
