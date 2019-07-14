@@ -7,10 +7,8 @@
  * @module is-integer-x
  */
 
-'use strict';
-
-var numberIsFinite = require('is-finite-x');
-var toInteger = require('to-integer-x').toInteger2018;
+const numberIsFinite = require('is-finite-x');
+const toInteger = require('to-integer-x').toInteger2018;
 
 /**
  * This method determines whether the passed value is an integer.
