@@ -7,8 +7,10 @@ import toInteger from 'to-integer-x';
  * @returns {boolean} A Boolean indicating whether or not the given value is an integer.
  */
 
-export default function isInteger(value) {
+var isInteger = function isInteger(value) {
   return numberIsFinite(value) && toInteger(value) === value;
-}
+};
+
+export default isInteger;
 
 //# sourceMappingURL=is-integer-x.esm.js.map
