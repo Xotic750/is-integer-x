@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-07-24T16:15:11.778Z",
+  "date": "2019-07-25T21:48:18.040Z",
   "describe": "",
   "description": "Determine whether the passed value is an integer.",
   "file": "is-integer-x.js",
   "hash": "2fae1afc30d0edb8ac70",
   "license": "MIT",
-  "version": "2.0.20"
+  "version": "2.0.21"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
