@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-07-27T13:39:57.035Z",
+  "date": "2019-07-27T14:10:35.135Z",
   "describe": "",
   "description": "Determine whether the passed value is an integer.",
   "file": "is-integer-x.js",
-  "hash": "2fae1afc30d0edb8ac70",
+  "hash": "5f15805d92b01ba7a451",
   "license": "MIT",
-  "version": "2.0.24"
+  "version": "2.0.25"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -1296,8 +1296,6 @@ var binaryRadix = 2;
 var octalRadix = 8;
 var testCharsCount = 2;
 var to_number_x_esm_ERROR_MESSAGE = 'Cannot convert a Symbol value to a number';
-/** @type {NumberConstructor} */
-
 var to_number_x_esm_castNumber = testCharsCount.constructor;
 var pStrSlice = to_number_x_esm_ERROR_MESSAGE.slice;
 var binaryRegex = /^0b[01]+$/i;
