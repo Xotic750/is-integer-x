@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-07-31T15:49:06.258Z",
+  "date": "2019-07-31T17:18:08.633Z",
   "describe": "",
   "description": "Determine whether the passed value is an integer.",
   "file": "is-integer-x.js",
