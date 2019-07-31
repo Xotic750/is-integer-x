@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-07-31T19:35:02.592Z",
+  "date": "2019-07-31T22:07:06.915Z",
   "describe": "",
   "description": "Determine whether the passed value is an integer.",
   "file": "is-integer-x.js",
-  "hash": "5f15805d92b01ba7a451",
+  "hash": "8c1534d9d9bc6cd3d495",
   "license": "MIT",
-  "version": "2.0.25"
+  "version": "2.0.26"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -317,7 +317,7 @@ module.exports = function hasSymbols() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/is-nan-x/dist/is-nan-x.esm.js
+// CONCATENATED MODULE: ./node_modules/is-finite-x/node_modules/is-nan-x/dist/is-nan-x.esm.js
 /**
  * This method determines whether the passed value is NaN and its type is
  * `Number`. It is a more robust version of the original, global isNaN().
@@ -1367,6 +1367,23 @@ var to_number_x_esm_toNumber = function toNumber(argument) {
 /* harmony default export */ var to_number_x_esm = (to_number_x_esm_toNumber);
 
 
+// CONCATENATED MODULE: ./node_modules/is-nan-x/dist/is-nan-x.esm.js
+/**
+ * This method determines whether the passed value is NaN and its type is
+ * `Number`. It is a more robust version of the original, global isNaN().
+ *
+ * @param {*} [value] - The value to be tested for NaN.
+ * @returns {boolean} `true` if the given value is NaN and its type is Number;
+ *  otherwise, `false`.
+ */
+var dist_is_nan_x_esm_isNaN = function isNaN(value) {
+  /* eslint-disable-next-line no-self-compare */
+  return value !== value;
+};
+
+/* harmony default export */ var dist_is_nan_x_esm = (dist_is_nan_x_esm_isNaN);
+
+
 // CONCATENATED MODULE: ./node_modules/math-sign-x/dist/math-sign-x.esm.js
 
 
@@ -1383,7 +1400,7 @@ var to_number_x_esm_toNumber = function toNumber(argument) {
 var math_sign_x_esm_sign = function sign(x) {
   var n = to_number_x_esm(x);
 
-  if (n === 0 || is_nan_x_esm(n)) {
+  if (n === 0 || dist_is_nan_x_esm(n)) {
     return n;
   }
 
@@ -1410,7 +1427,7 @@ var abs = Math.abs,
 var to_integer_x_esm_toInteger = function toInteger(value) {
   var number = to_number_x_esm(value);
 
-  if (is_nan_x_esm(number)) {
+  if (dist_is_nan_x_esm(number)) {
     return 0;
   }
 
