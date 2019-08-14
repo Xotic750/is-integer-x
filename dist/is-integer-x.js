@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-08-13T13:00:44.585Z",
+  "date": "2019-08-14T13:55:06.394Z",
   "describe": "",
   "description": "Determine whether the passed value is an integer.",
   "file": "is-integer-x.js",
-  "hash": "74e7da2c6719368b8927",
+  "hash": "e0a1b57dae0d97f1718b",
   "license": "MIT",
-  "version": "2.0.27"
+  "version": "2.1.0"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -346,7 +346,7 @@ module.exports = function hasSymbols() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/is-finite-x/node_modules/is-nan-x/dist/is-nan-x.esm.js
+// CONCATENATED MODULE: ./node_modules/is-nan-x/dist/is-nan-x.esm.js
 /**
  * This method determines whether the passed value is NaN and its type is
  * `Number`. It is a more robust version of the original, global isNaN().
@@ -369,7 +369,8 @@ var is_nan_x_esm_isNaN = function isNaN(value) {
  *
  * @type number
  */
-/* harmony default export */ var infinity_x_esm = (1 / 0);
+var constantInfinity = 1 / 0;
+/* harmony default export */ var infinity_x_esm = (constantInfinity);
 
 
 // CONCATENATED MODULE: ./node_modules/is-finite-x/dist/is-finite-x.esm.js
@@ -1276,7 +1277,8 @@ var to_primitive_x_esm_toPrimitive = function toPrimitive(input, preferredType) 
  *
  * @type number
  */
-/* harmony default export */ var nan_x_esm = (0 / 0);
+var constantNAN = 0 / 0;
+/* harmony default export */ var nan_x_esm = (constantNAN);
 
 
 // CONCATENATED MODULE: ./node_modules/parse-int-x/dist/parse-int-x.esm.js
@@ -1432,23 +1434,6 @@ var to_number_x_esm_toNumber = function toNumber(argument) {
 /* harmony default export */ var to_number_x_esm = (to_number_x_esm_toNumber);
 
 
-// CONCATENATED MODULE: ./node_modules/is-nan-x/dist/is-nan-x.esm.js
-/**
- * This method determines whether the passed value is NaN and its type is
- * `Number`. It is a more robust version of the original, global isNaN().
- *
- * @param {*} [value] - The value to be tested for NaN.
- * @returns {boolean} `true` if the given value is NaN and its type is Number;
- *  otherwise, `false`.
- */
-var dist_is_nan_x_esm_isNaN = function isNaN(value) {
-  /* eslint-disable-next-line no-self-compare */
-  return value !== value;
-};
-
-/* harmony default export */ var dist_is_nan_x_esm = (dist_is_nan_x_esm_isNaN);
-
-
 // CONCATENATED MODULE: ./node_modules/math-sign-x/dist/math-sign-x.esm.js
 
 
@@ -1465,7 +1450,7 @@ var dist_is_nan_x_esm_isNaN = function isNaN(value) {
 var math_sign_x_esm_sign = function sign(x) {
   var n = to_number_x_esm(x);
 
-  if (n === 0 || dist_is_nan_x_esm(n)) {
+  if (n === 0 || is_nan_x_esm(n)) {
     return n;
   }
 
@@ -1492,7 +1477,7 @@ var abs = Math.abs,
 var to_integer_x_esm_toInteger = function toInteger(value) {
   var number = to_number_x_esm(value);
 
-  if (dist_is_nan_x_esm(number)) {
+  if (is_nan_x_esm(number)) {
     return 0;
   }
 
